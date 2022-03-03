@@ -2,6 +2,7 @@
 // The .NET Foundation licenses this file to you under the MIT license.
 
 using System;
+using System.Threading;
 using Iot.Device.Common;
 using Iot.Device.Ndef;
 using Microsoft.Extensions.Logging;
@@ -517,6 +518,7 @@ namespace Iot.Device.Card.Ultralight
                     serializedMessage.Slice(block * BlockSize).CopyTo(Data);
                 }
 
+                Thread.Sleep(10);
                 var res = RunUltralightCommand();
                 if (res < 0)
                 {
