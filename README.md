@@ -4,9 +4,9 @@
 
 # .NET IoT Libraries
 
-<span style="color:red">
-## Includes waiting during write procedure of UltraLightCard (NFCTag12x) to be able to write the whole NDEF text on a Raspberry Pi with aarch64 (dietpi). No other changes
-</span>
+
+## :small_red_triangle: Includes waiting during write procedure of UltraLightCard (NFCTag12x) to be able to write the whole NDEF text on a Raspberry Pi with aarch64 (dietpi). No other changes 
+
 
 .NET can be used to build applications for [IoT](https://en.wikipedia.org/wiki/Internet_of_things) devices and scenarios. IoT applications typically interact with sensors, displays and input devices that require the use of [GPIO pins](https://en.wikipedia.org/wiki/General-purpose_input/output), serial ports or similar hardware.
 
