@@ -16,7 +16,7 @@ using Iot.Device.Pn532.AsTarget;
 using Iot.Device.Pn532.ListPassive;
 using Iot.Device.Pn532.RfConfiguration;
 using Iot.Device.Rfid;
-using IoT.Device.Pn532;
+using Iot.Device.Pn532;
 using Microsoft.Extensions.Logging;
 
 namespace Iot.Device.Pn532
@@ -387,7 +387,7 @@ namespace Iot.Device.Pn532
                 // The maximum value for the timeout is 12.75 sec (Timeout = 0xFF).
                 if (value / 50 > 0xFF)
                 {
-                    throw new ArgumentException(nameof(VirtualCardTimeout), "Value must be 12750 milliseconds or less.");
+                    throw new ArgumentException("Value must be 12750 milliseconds or less.", nameof(VirtualCardTimeout));
                 }
 
                 _virtualCardTimeout = value / 50;
